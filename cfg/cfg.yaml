@@ -1,0 +1,19 @@
+sumo:
+  lateral-resolution: 5
+  step-length: 0.01
+  cfg-path: ./map/LR.sumocfg
+  log-path: datetime.datetime.now().strftime('%Y-%m-%d-%H-%M-%S')
+
+veh:
+  width: 1.8
+  length: 5     # 车身长度，记作L
+  D_c: 100
+  maxSpeed: 120
+  minGap: 2.5   # 纵向安全间距，记作F
+
+scenario:
+  p_s: 0
+  p_c: 200
+  p_d: 600
+  p_e: 1000
+  p_inf: 1500
